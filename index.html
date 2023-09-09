@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>BMI</title>
+</head>
+<body>
+
+<div class="container" id="greeting-container">
+    <h1>BMI CALCULATOR</h1>
+    <h2>Everybody worries about their EMI...</h2>
+    <h2> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;But you are worried about your BMI....</h2>
+    <br>
+    <br>
+    <label for="name">Name:</label>
+<input type="text" id="name" placeholder="Enter your name" onchange="toggleGenderButtons()">
+
+    <br>
+    <h3>Choose your Gender:</h3>
+    <button type="button" data-gender="Mr.">
+        <img src="boy.jpg" alt="button" style="width: 100px; height: 100px;" />
+    </button>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" data-gender="Ms.">
+        <img src="girl.jpg" alt="abutton" style="width: 100px; height: 100px;" />
+    </button>
+</div>
+<div class="container" id="bmi-container" style="display: none;">
+    <h1>BMI CALCULATOR</h1>
+    <div id="greeting"></div>
+    <br>
+    <section>
+        <div class="image-container" style="display: flex; float: left;">
+            <img src="bmirange.jpg" alt="bmirange" style="height: 150px; width: 350px;">
+        </div>
+        <br>
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight">
+        <br>
+        <pre></pre>
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height">
+        <pre></pre>
+    </section>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="PreviousPage()">Previous</button>&nbsp;&nbsp;&nbsp;
+    <button onclick="calculateBMI()">Calculate BMI</button> 
+    <div id="result-container">
+        <p id="result"></p>
+    </div>
+    <img id="underweightImage" src="underweight.jpg" alt="Underweight Image" style="display: none;">
+    <img id="normalImage" src="normal.jpg" alt="Normal Image" style="display: none;">
+    <img id="overweightImage" src="overweight.jpg" alt="Overweight Image" style="display: none;">
+    <img id="obeseImage" src="obesity.jpg" alt="Obese Image" style="display: none;">
+</div>
+<script src="script.js"></script>
+</body>
+</html>

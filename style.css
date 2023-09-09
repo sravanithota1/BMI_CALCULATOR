@@ -1,0 +1,83 @@
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* This ensures the background covers the entire viewport height */
+}
+
+    div{
+        padding-left: 50px;
+        text-align: left;
+    }
+    .container button{
+            background-color:rgb(190, 152, 190);
+            border: none;
+            color:black;
+            padding: 15px 15px;
+            text-align: center;
+            text-decoration:dotted;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            font-weight: bolder;
+
+    }
+    h1{
+        text-align: center;
+        font-size: 70px;
+        font-family:Lucida Handwriting;
+        color: rgb(77, 8, 8);
+    }
+    h2{
+        font-style: italic;
+        color:darkblue;
+        font-weight: bolder;
+        font-size: 30px;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid darkblue; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .10em; /* Adjust as needed */
+        animation: 
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color:darkblue; }
+      }
+    h3{
+        font-style:oblique;
+        font-size: 25px;
+
+    }
+    .container label,input {
+
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    #result {
+        font-family:Helvetica; 
+        font-size: 22px; 
+        color:rgb(129, 190, 9); 
+        font-weight: bold;
+    }
+    #result:hover{
+      color:red;
+    }
+    
+    #greeting {
+        font-size: 24px;
+        font-style: italic;
+        font-weight: bolder;
+        padding-left: 20px;
+    }
